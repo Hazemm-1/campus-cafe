@@ -82,3 +82,6 @@ text-align: center;
 padding: 15px;
 }
 footer a { color: #f2b56b; }
+fieldset { border: 1px solid #e5d9c9; border-radius: 4px; margin-top: 12px; }
+fieldset label { display: inline-block; margin: 0 16px 0 0; font-weight: normal; }
+input[type="radio"] { width: auto; margin: 0 6px 0 0; }
