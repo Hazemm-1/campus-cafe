@@ -1,87 +1,105 @@
+
+:root {
+  --primary: #1f4d3a;
+  --primary-hover: #2f6b52;
+  --accent: #f2c94c;
+  --soft-text: #cfe8d9;
+  --page-bg: #f4f8f5;
+  --card-bg: #eef7f1;
+  --border: #d3e3d9;
+  --text: #2b2b2b;
+}
+
 /* ---------- Base ---------- */
 * { box-sizing: border-box; }
 body {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-color: #2b2b2b;
-background-color: #faf6f0;
-margin: 0;
-line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--text);
+  background-color: var(--page-bg);
+  margin: 0;
+  line-height: 1.6;
 }
+
 /* ---------- Header and nav ---------- */
 header {
-background-color: #4b2e1e;
-color: white;
-text-align: center;
-padding: 25px 15px;
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
 }
 #site-title { margin: 0; font-size: 40px; }
-.tagline { color: #e8c9a8; margin: 5px 0 15px; }
+.tagline { color: var(--soft-text); margin: 5px 0 15px; }
 nav a {
-color: white;
-text-decoration: none;
-margin: 0 12px;
-font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
 }
-nav a:hover { color: #f2b56b; }
+nav a:hover { color: var(--accent); }
+
 /* ---------- Main content ---------- */
 main {
-max-width: 800px;
-margin: 0 auto;
-padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 section {
-background-color: white;
-border: 1px solid #e5d9c9;
-border-radius: 8px;
-padding: 20px;
-margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
-h2 { color: #4b2e1e; border-bottom: 2px solid #f2b56b; padding-bottom: 5px; }
+h2 { color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 5px; }
 img { max-width: 100%; height: auto; border-radius: 6px; }
+
 /* ---------- Class selector: cards ---------- */
 .card {
-display: inline-block;
-width: 45%;
-padding: 15px;
-margin: 8px;
-border: 2px solid #f2b56b;
-background-color: #fff8ee;
+  display: inline-block;
+  width: 45%;
+  padding: 15px;
+  margin: 8px;
+  border: 2px solid var(--accent);
+  background-color: var(--card-bg);
 }
+
 /* ---------- Table ---------- */
 table { width: 100%; border-collapse: collapse; }
-th { background-color: #4b2e1e; color: white; text-align: left; }
-th, td { padding: 10px; border-bottom: 1px solid #e5d9c9; }
-tr:nth-child(even) { background-color: #faf6f0; }
+th { background-color: var(--primary); color: white; text-align: left; }
+th, td { padding: 10px; border-bottom: 1px solid var(--border); }
+tr:nth-child(even) { background-color: var(--page-bg); }
+
 /* ---------- Form ---------- */
 form label { display: block; margin-top: 12px; font-weight: bold; }
 input, select, textarea {
-width: 100%;
-padding: 8px;
-margin-top: 4px;
-border: 1px solid #bbb;
-border-radius: 4px;
-font-size: 15px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 15px;
 }
 button {
-margin-top: 15px;
-padding: 10px 24px;
-background-color: #4b2e1e;
-color: white;
-border: none;
-border-radius: 4px;
-font-size: 16px;
-cursor: pointer;
+  margin-top: 15px;
+  padding: 10px 24px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }
-button:hover { background-color: #7a4a30; }
-/* ---------- Footer ---------- */
-footer {
-background-color: #4b2e1e;
-color: white;
-text-align: center;
-padding: 15px;
-}
-footer a { color: #f2b56b; }
-fieldset { border: 1px solid #e5d9c9; border-radius: 4px; margin-top: 12px; }
+button:hover { background-color: var(--primary-hover); }
+fieldset { border: 1px solid var(--border); border-radius: 4px; margin-top: 12px; }
 fieldset label { display: inline-block; margin: 0 16px 0 0; font-weight: normal; }
 input[type="radio"] { width: auto; margin: 0 6px 0 0; }
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+footer a { color: var(--accent); }
